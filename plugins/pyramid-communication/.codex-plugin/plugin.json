@@ -1,0 +1,22 @@
+{
+  "name": "pyramid-communication",
+  "version": "0.1.0",
+  "description": "Structure Chinese business reports and presentations with Pyramid Principle methods.",
+  "author": {
+    "name": "Xufeng"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "金字塔沟通",
+    "shortDescription": "让汇报、方案和商务文档结论先行、结构清晰。",
+    "longDescription": "基于金字塔原理，为中文汇报、方案、复盘、述职、周报和演示提供结构搭建、逻辑审查与重写工作流。",
+    "developerName": "Xufeng",
+    "category": "Productivity",
+    "capabilities": ["Analysis", "Write"],
+    "defaultPrompt": [
+      "用金字塔结构重写这份汇报，先给结论，再给依据和行动。",
+      "检查这份方案的上下层逻辑、MECE 和决策信息是否完整。",
+      "把这些零散材料整理成适合领导汇报的结构。"
+    ]
+  }
+}
