@@ -1,0 +1,4 @@
+interface:
+  display_name: "金字塔沟通"
+  short_description: "Structure reports with Pyramid Principle logic"
+  default_prompt: "Use $pyramid-communication to restructure this report into a clear, decision-first document."
