@@ -1,0 +1,22 @@
+{
+  "name": "prd-writing-styles",
+  "version": "0.1.0",
+  "description": "PRD review and writing style skills for Luo Jing and Zijun style product documents.",
+  "author": {
+    "name": "Xufeng"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PRD 写作风格",
+    "shortDescription": "沉淀罗菁式审查和子隽式 PRD 逻辑。",
+    "longDescription": "包含罗菁式 PRD 完整性审查，以及子隽式背景、竞品分析、方案框架和判断链写作方法。",
+    "developerName": "Xufeng",
+    "category": "Productivity",
+    "capabilities": ["Analysis", "Write"],
+    "defaultPrompt": [
+      "用 $luojing-prd-review 审查这份 PRD 是否足够完整。",
+      "用 $zijun-prd-style 重写这份 PRD 的背景、竞品分析和方案框架。",
+      "按子隽风格帮我把这些材料整理成 PRD 前半部分。"
+    ]
+  }
+}
