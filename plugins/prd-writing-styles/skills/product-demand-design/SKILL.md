@@ -1,38 +1,50 @@
 ---
 name: product-demand-design
-description: Use when designing, reviewing, or preparing product requirements and PRDs before development, especially when a proposal needs end-state thinking, pre-launch benefit validation, online/offline evidence, tradeoff analysis, and a transition plan.
+description: Use when helping the user think through any product demand, opportunity, proposal, or decision before action, especially when they need end-state reasoning, user segmentation, evidence, tradeoff analysis, and pre-launch judgment.
 ---
 
-# Product Demand Design
+# Product Demand Thinking
 
-Use this skill to turn a product idea from a UI proposal into a judged product hypothesis. The core standard is: before designing the solution, estimate the demand's likely value, affected users, upside, downside, and end-state fit as far as possible.
+Use this skill as a thinking partner before a product decision becomes a plan, PRD, UI change, experiment, model strategy, or resource tradeoff. The goal is not to force every question into a PRD format. The goal is to help the user form a sharper judgment: what is true, what is assumed, what can be verified now, what is worth doing, and what path avoids unnecessary detours.
 
 ## Core Principle
 
-Do not bring only a UI change to review. Bring a judged hypothesis:
+Do not start from "what should we build?" Start from "what should we believe before we build?"
 
-- What is the product end-state this demand moves toward?
-- Which user segment and job does it improve?
-- If the demand already existed today, what existing online behavior or offline replay could approximate its effect?
-- What benefit, loss, cost, and badcases are expected before launch?
-- Is the current proposal a step toward the end-state, or a detour that patches a symptom?
+Every demand should become a judged hypothesis:
+
+- End-state: what future product direction does this move toward?
+- User truth: whose problem is this, and whose experience may be damaged?
+- Evidence: if this already existed today, what current data or proxy behavior could verify it?
+- Tradeoff: what is gained, what is sacrificed, and whether that exchange is acceptable?
+- Path: is this the shortest reasonable step toward the end-state, or a local patch?
+
+## Operating Modes
+
+Choose the lightest mode that fits the user's ask.
+
+- Thinking mode: help the user reason aloud, ask sharper questions, expose hidden assumptions, and propose validation paths.
+- Review mode: critique an existing idea, meeting discussion, PRD, UI proposal, experiment, or strategy.
+- Drafting mode: only when the user asks for a written artifact, turn the thinking into a structured plan, PRD section, review memo, or meeting response.
+
+In thinking mode, do not over-format. Prefer a concise diagnosis, a small set of key questions, and a recommended next move.
 
 ## Workflow
 
 1. Start From End-State
-   - Define what the product should look like in 3-6 months.
-   - Decide whether the capability is a core capability in the main flow or an extra branch that should jump out.
-   - For each entry and output, explain whether it belongs in the main conversation/result flow or in a separate tool page.
+   - Define what the product, business, or user relationship should look like in the relevant future window.
+   - Decide whether the demand is part of the core flow, an add-on, a patch, an experiment, or an operational necessity.
+   - Ask whether the proposed direction compounds into the future product or creates future rework.
 
-2. Segment Users Before Designing UI
-   - Split users by intent and dependency, not just by page source.
-   - Identify users who only need a quick answer, users who need detailed explanation, users whose follow-up depends on the visible explanation, and users dissatisfied with the answer.
+2. Segment Users Before Designing The Solution
+   - Split users by intent, motivation, dependency, frequency, and sensitivity to regression.
+   - Identify the primary beneficiary, secondary beneficiary, neutral group, and harmed group.
    - Mark the counter-user: the group that may be harmed by the new design.
 
 3. Validate Before Launch
    - Ask: "If this demand existed today, how would I verify it using current data?"
-   - Use online proxy behavior, historical cohorts, query classification, click/long-press/follow-up paths, retention, satisfaction, latency, and conversion as evidence.
-   - For AI/model features, run offline replay by scene and subject with tools on/off before committing development.
+   - Use existing online behavior, historical cohorts, manual review, offline replay, user interviews, logs, funnel data, retention, satisfaction, quality, cost, and latency as possible evidence.
+   - Prefer evidence that validates the exact decision being made, not only the general opportunity.
 
 4. Turn Evidence Into A Decision
    - State the decision, affected traffic, expected gain, expected loss, and uncertainty.
@@ -50,8 +62,8 @@ Do not bring only a UI change to review. Bring a judged hypothesis:
    - Check whether the interim state reduces future rework or creates a dead-end path.
 
 7. Make Tradeoffs Explicit
-   - State what is sacrificed for what: accuracy for resource, latency for quality, flow consistency for depth, or information density for clarity.
-   - For downgrade/resource strategies, show traffic coverage, quality loss, resource saved, staircase rollout, monitoring, and rollback.
+   - State what is sacrificed for what: accuracy for resource, latency for quality, simplicity for depth, consistency for flexibility, growth for retention, or speed for confidence.
+   - If the decision is a tradeoff, quantify both sides and define the acceptable loss.
 
 8. Define Launch Criteria
    - Specify success metrics, guardrail metrics, sample checks, badcase review, and no-go thresholds.
@@ -70,7 +82,7 @@ Do not bring only a UI change to review. Bring a judged hypothesis:
 
 ## Output Template
 
-Use this structure when producing or reviewing a demand:
+Use this structure when a written artifact is useful. For quick thinking, answer only the relevant parts.
 
 1. One-sentence judgment
 2. Product end-state
@@ -86,12 +98,12 @@ Use this structure when producing or reviewing a demand:
 
 ## Meeting Response Pattern
 
-When challenged in a review, first identify the level of the question:
+When challenged in a review, first identify the level of the question. The useful move is to rise from the local answer to the underlying judgment:
 
-- "I understand this is not only a UI question. The core question is whether this capability should live in the main flow or as a separate branch."
-- "The data I have proves the broad opportunity, but it does not yet prove this specific rule. I need to add validation for the exact affected group."
+- "I understand this is not only a local solution question. The core question is whether this demand belongs in the future product direction."
+- "The data I have proves the broad opportunity, but it does not yet prove this specific decision. I need to add validation for the exact affected group."
 - "The final state should be X. The current proposal is an interim step to validate Y. If Y is true, the next step is Z."
-- "The group most likely to be harmed is A. I will verify its size and behavior through B before deciding whether this design is acceptable."
+- "The group most likely to be harmed is A. I will verify its size and behavior through B before deciding whether this tradeoff is acceptable."
 
 ## Anti-Patterns
 
@@ -99,32 +111,11 @@ When challenged in a review, first identify the level of the question:
 - Listing multiple schemes without a recommended answer.
 - Using background opportunity data as decision evidence.
 - Saying "launch first and see" when pre-launch proxy validation is possible.
-- Optimizing a local UI issue while ignoring the future product architecture.
+- Optimizing a local symptom while ignoring the future product architecture.
 - Evaluating an averaged metric instead of the exact rule being proposed.
 - Hiding a real tradeoff behind vague words like "better experience" or "consistency."
 - Missing the badcase user whose existing path is degraded by the new solution.
 
-## Domain Notes
+## References
 
-For learning Q&A and problem-solving flows:
-
-- Decide whether solving, correction, explanation, and follow-up are native conversation capabilities or separate tool-page capabilities.
-- Distinguish answer-first users, explanation-reading users, explanation-anchored follow-up users, and answer-dissatisfied users.
-- If follow-up depends on visible explanation context, hiding or separating the explanation may hurt that group.
-- A UI patch is weak if the long-term direction is to render the capability natively in the main learning conversation.
-
-For model/tool/RAG features:
-
-- Validate independent tool gain through offline replay before development.
-- Break results down by subject, task type, source, latency, quality, and badcase class.
-- If query-time retrieval can be converted into an offline index or question bank, compare both paths before choosing runtime search.
-
-For model downgrade or resource strategies:
-
-- Evaluate the exact downgrade rule, not the global model average.
-- Show quality loss, resource saved, traffic coverage, and the rollout staircase.
-- Make clear which user experience is being sacrificed and why it is acceptable.
-
-## Source Pattern
-
-This skill is distilled from Zhao Rui's product review pattern in the 2026-08-28 Doubao Aixue internal product review. For the detailed reasoning chain, read `references/zhao-rui-review-pattern.md`.
+This skill is generalized from Zhao Rui's product review pattern in the 2026-08-28 Doubao Aixue internal product review. Read `references/zhao-rui-review-pattern.md` only when the user asks about that meeting, the original examples, or how this thinking pattern appeared in a real review.
