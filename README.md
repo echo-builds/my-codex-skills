@@ -29,6 +29,18 @@
 - `用 $zijun-prd-style 重写这份 PRD 的背景和方案框架。`
 - `按子隽风格帮我把这些材料整理成 PRD 前半部分。`
 
+### Codex Skill 工作流 `codex-skill-workflows`
+
+用于把个人 Codex Skill 的本机可调用版本和 GitHub 长期版本保持同步，当前包含：
+
+- `skill-sync-workflow`：当用户说“更新这个 skill / 同步 skill / 推到 GitHub / 检查 skill 是否一致”时，按固定流程更新本机 `~/.codex/skills` 和 GitHub 仓库。
+
+调用示例：
+
+- `用 $skill-sync-workflow 同步这个 skill 到本机和 GitHub。`
+- `更新这个 skill，并同步到我的 GitHub skill 仓库。`
+- `检查本机和 GitHub 上这个 skill 是否一致。`
+
 ## 跨设备使用
 
 将整个仓库发布到 GitHub。每台电脑在 Codex 中添加这个仓库对应的插件市场，然后安装需要的插件。安装或升级后，请新建任务以加载最新版技能。
