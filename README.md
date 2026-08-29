@@ -16,13 +16,15 @@
 
 ### PRD 写作风格 `prd-writing-styles`
 
-用于沉淀 PRD 写作和评审风格，当前包含：
+用于沉淀 PRD 写作、需求设计和评审风格，当前包含：
 
+- `product-demand-design`：按终态反推、用户分层、上线前验证、收益/损失推演和 tradeoff 设计或评审需求。
 - `luojing-prd-review`：按罗菁式完整性、边界、策略、数据和上线风险审查 PRD。
 - `zijun-prd-style`：按子隽式判断链重写或评审 PRD 的背景、竞品分析和方案框架。
 
 调用示例：
 
+- `用 $product-demand-design 评审这份产品方案。`
 - `用 $luojing-prd-review 审查这份 PRD。`
 - `用 $zijun-prd-style 重写这份 PRD 的背景和方案框架。`
 - `按子隽风格帮我把这些材料整理成 PRD 前半部分。`
