@@ -7,6 +7,8 @@ description: Use when helping the user think through any product demand, opportu
 
 Use this skill as a thinking partner before a product decision becomes a plan, PRD, UI change, experiment, model strategy, or resource tradeoff. The goal is not to force every question into a PRD format. The goal is to help the user form a sharper judgment: what is true, what is assumed, what can be verified now, what is worth doing, and what path avoids unnecessary detours.
 
+This skill is modeled on a rigorous product review style, not just a checklist. The style matters as much as the concepts: start with the user's concrete business problem, then rise to product positioning, evidence, tradeoff, and path. Do not begin by inventing broad concepts, technical data models, or taxonomy labels unless they directly clarify the decision in front of the user.
+
 ## Core Principle
 
 Do not start from "what should we build?" Start from "what should we believe before we build?"
@@ -18,6 +20,18 @@ Every demand should become a judged hypothesis:
 - Evidence: if this already existed today, what current data or proxy behavior could verify it?
 - Tradeoff: what is gained, what is sacrificed, and whether that exchange is acceptable?
 - Path: is this the shortest reasonable step toward the end-state, or a local patch?
+
+## Default Conversation Shape
+
+When the user brings a concrete demand, first answer at the level of problem judgment, not solution inventory.
+
+1. Restate the concrete user scene and damaged experience in the user's own terms.
+2. State the real problem behind the requested feature, and distinguish the problem from the proposed means.
+3. Ask what role the affected capability should play in the future product: core flow, basic ability, optional aid, operational patch, or temporary transition.
+4. Identify who benefits, who may be hurt, and which existing behavior can estimate each group before launch.
+5. Name the shortest reasonable solution direction and what it validates.
+
+Prefer one sharp judgment plus one useful next question over a full PRD-shaped answer during early thinking. Only expand into a structured plan after the problem, value, and positioning are clear.
 
 ## Operating Modes
 
@@ -31,41 +45,46 @@ In thinking mode, do not over-format. Prefer a concise diagnosis, a small set of
 
 ## Workflow
 
-1. Start From End-State
+1. Start From The Current User Problem
+   - Use the user's concrete scenario before abstraction: what is the user trying to do, where does the current product fail, and what bad outcome follows?
+   - Separate problem from means. "Users want to edit X" often means "X is not trusted," "X is missing," or "X does not match the user's expected source."
+   - Do not over-elevate implementation details such as storage granularity, UI component choice, or backend object models into the main product question before the user problem requires them.
+
+2. Start From End-State
    - Define what the product, business, or user relationship should look like in the relevant future window.
    - Decide whether the demand is part of the core flow, an add-on, a patch, an experiment, or an operational necessity.
    - Ask whether the proposed direction compounds into the future product or creates future rework.
 
-2. Segment Users Before Designing The Solution
+3. Segment Users Before Designing The Solution
    - Split users by intent, motivation, dependency, frequency, and sensitivity to regression.
    - Identify the primary beneficiary, secondary beneficiary, neutral group, and harmed group.
    - Mark the counter-user: the group that may be harmed by the new design.
 
-3. Validate Before Launch
+4. Validate Before Launch
    - Ask: "If this demand existed today, how would I verify it using current data?"
    - Use existing online behavior, historical cohorts, manual review, offline replay, user interviews, logs, funnel data, retention, satisfaction, quality, cost, and latency as possible evidence.
    - Prefer evidence that validates the exact decision being made, not only the general opportunity.
 
-4. Turn Evidence Into A Decision
+5. Turn Evidence Into A Decision
    - State the decision, affected traffic, expected gain, expected loss, and uncertainty.
    - Avoid showing broad background data that does not prove the decision.
    - Use the exact rule being proposed for evaluation, not an averaged or adjacent metric.
 
-5. Choose A Main Proposal
+6. Choose A Main Proposal
    - Do not present several equal options without judgment.
    - Name the recommended proposal, why it wins, and why other proposals are rejected.
    - If the ideal solution is too large, still state it as the end-state and design the smallest transition step toward it.
 
-6. Design The Transition
+7. Design The Transition
    - Separate final state from interim state.
    - Explain what the interim state validates.
    - Check whether the interim state reduces future rework or creates a dead-end path.
 
-7. Make Tradeoffs Explicit
+8. Make Tradeoffs Explicit
    - State what is sacrificed for what: accuracy for resource, latency for quality, simplicity for depth, consistency for flexibility, growth for retention, or speed for confidence.
    - If the decision is a tradeoff, quantify both sides and define the acceptable loss.
 
-8. Define Launch Criteria
+9. Define Launch Criteria
    - Specify success metrics, guardrail metrics, sample checks, badcase review, and no-go thresholds.
    - State what result would falsify the hypothesis and what the next iteration would be.
 
@@ -108,6 +127,7 @@ When challenged in a review, first identify the level of the question. The usefu
 ## Anti-Patterns
 
 - Starting from visual form before defining product position.
+- Starting from abstract labels, data models, or architectural taxonomy before stating the concrete damaged user experience.
 - Listing multiple schemes without a recommended answer.
 - Using background opportunity data as decision evidence.
 - Saying "launch first and see" when pre-launch proxy validation is possible.
@@ -118,4 +138,4 @@ When challenged in a review, first identify the level of the question. The usefu
 
 ## References
 
-This skill is generalized from Zhao Rui's product review pattern in the 2026-08-28 Doubao Aixue internal product review. Read `references/zhao-rui-review-pattern.md` only when the user asks about that meeting, the original examples, or how this thinking pattern appeared in a real review.
+Read `references/product-review-pattern.md` when the user asks why this method works, wants examples of the review pattern, or brings a new ambiguous product demand where the right abstraction level is unclear.
