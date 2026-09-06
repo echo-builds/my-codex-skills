@@ -1,0 +1,18 @@
+{
+  "name": "thinking-workflows",
+  "version": "0.1.0",
+  "description": "Turn messy information into sound judgments and collaborate with AI on complex knowledge work.",
+  "author": {
+    "name": "xufeng-code"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "思考与人机协作",
+    "shortDescription": "从零散信息形成判断，并与 AI 共同完成复杂认知任务。",
+    "longDescription": "提供从信号到判断、以及人与 AI 分阶段共同思考的通用工作流，适用于研究、分析、方案、写作、规划与复盘。",
+    "developerName": "xufeng-code",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "帮助我从当前材料中形成可靠判断，并设计人与 AI 的协作推进方式。"
+  }
+}
