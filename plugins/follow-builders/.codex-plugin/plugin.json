@@ -1,0 +1,18 @@
+{
+  "name": "follow-builders",
+  "version": "0.1.0",
+  "description": "AI builders digest from X, YouTube podcasts, and blogs.",
+  "author": {
+    "name": "xufeng-code"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Follow Builders",
+    "shortDescription": "Track and summarize leading AI builders.",
+    "longDescription": "Monitor AI builders across X, YouTube podcasts, and blogs, then turn their updates into concise, useful digests.",
+    "developerName": "xufeng-code",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Summarize the latest updates from leading AI builders."
+  }
+}
