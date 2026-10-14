@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill 同步工作流"
-  short_description: "同步个人 Codex Skill 到本机和 GitHub"
-  default_prompt: "用 $skill-sync-workflow 同步这个 skill 到本机和 GitHub。"

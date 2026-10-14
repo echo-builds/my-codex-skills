@@ -1,0 +1,24 @@
+{
+  "name": "grilling",
+  "version": "0.1.0",
+  "description": "Relentless structured questioning for stress-testing plans and decisions.",
+  "author": {
+    "name": "Xufeng"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "计划压力测试",
+    "shortDescription": "通过结构化追问打磨计划、设计和决策。",
+    "longDescription": "包含 grilling 核心追问流程与 grill-me 快捷入口，沿决策树逐轮暴露未决问题和隐含假设。",
+    "developerName": "Xufeng",
+    "category": "Productivity",
+    "capabilities": [
+      "Analysis",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "用 $grill-me 拷问这个方案。",
+      "用 $grilling 压力测试这个决定。"
+    ]
+  }
+}

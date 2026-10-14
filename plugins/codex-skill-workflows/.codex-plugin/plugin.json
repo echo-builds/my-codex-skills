@@ -1,22 +1,24 @@
 {
   "name": "codex-skill-workflows",
-  "version": "0.1.0",
-  "description": "Personal workflows for keeping Codex skills usable locally and synchronized to GitHub.",
+  "version": "0.2.0",
+  "description": "Personal workflows for discovering useful agent skills.",
   "author": {
     "name": "Xufeng"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Codex Skill 工作流",
-    "shortDescription": "把个人 Skill 的本机可用版本和 GitHub 长期版本保持同步。",
-    "longDescription": "包含 Skill 同步工作流：当用户更新、同步或发布个人 Skill 时，优先读取本机可调用版本，同时更新 GitHub 源仓库，并在完成后报告本地路径、远端路径和 commit SHA。",
+    "displayName": "Codex Skill 发现",
+    "shortDescription": "搜索、核验并安装合适的 Agent Skill。",
+    "longDescription": "包含 find-skills：理解用户所需能力，搜索开放技能生态，核验来源和质量，并在用户授权后协助安装。",
     "developerName": "Xufeng",
     "category": "Productivity",
-    "capabilities": ["Analysis", "Write"],
+    "capabilities": [
+      "Analysis",
+      "Write"
+    ],
     "defaultPrompt": [
-      "用 $skill-sync-workflow 同步这个 skill 到本机和 GitHub。",
-      "更新这个 skill，并同步到我的 GitHub skill 仓库。",
-      "检查本机和 GitHub 上这个 skill 是否一致。"
+      "用 $find-skills 找一个适合这个任务的技能。",
+      "有没有能完成这件事的 skill？"
     ]
   }
 }
