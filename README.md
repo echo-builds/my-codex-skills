@@ -17,6 +17,7 @@
 ### Skill 发现 `codex-skill-workflows`
 
 - `find-skills`：搜索开放技能生态，核验来源和质量，并协助安装合适的技能。
+- `skill-creator`：Anthropic 官方技能创建工作流，用于创建、改进、评测和打包 Skill。
 
 ### 前端视觉设计 `frontend-design`
 

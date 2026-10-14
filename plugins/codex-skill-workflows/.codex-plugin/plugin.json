@@ -1,15 +1,15 @@
 {
   "name": "codex-skill-workflows",
-  "version": "0.2.0",
-  "description": "Personal workflows for discovering useful agent skills.",
+  "version": "0.3.0",
+  "description": "Personal workflows for discovering, creating, improving, and evaluating agent skills.",
   "author": {
     "name": "Xufeng"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Codex Skill 发现",
-    "shortDescription": "搜索、核验并安装合适的 Agent Skill。",
-    "longDescription": "包含 find-skills：理解用户所需能力，搜索开放技能生态，核验来源和质量，并在用户授权后协助安装。",
+    "displayName": "Codex Skill 发现与创建",
+    "shortDescription": "搜索、核验、创建并评测 Agent Skill。",
+    "longDescription": "包含 find-skills 与 Anthropic 官方 skill-creator：搜索并核验开放技能，也可创建、改进、评测、优化触发描述并打包技能。",
     "developerName": "Xufeng",
     "category": "Productivity",
     "capabilities": [
@@ -18,6 +18,7 @@
     ],
     "defaultPrompt": [
       "用 $find-skills 找一个适合这个任务的技能。",
+      "用 $skill-creator 创建或改进这个技能。",
       "有没有能完成这件事的 skill？"
     ]
   }
