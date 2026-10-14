@@ -25,6 +25,7 @@
 ### 产品探索与头脑风暴 `product-thinking`
 
 - `ambiguous-product-discovery`：用需求证据、关键断点、定向竞品和方案验证推进模糊产品命题。
+- `decision-driven-competitive-analysis`：围绕待决策问题、证据缺口、统一任务链和迁移边界组织竞品分析。
 - `product-brainstorming`：探索问题空间、挑战假设、生成并收敛产品方向。
 
 ### 计划压力测试 `grilling`
