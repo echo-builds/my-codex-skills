@@ -1,0 +1,20 @@
+{
+  "name": "ai-intelligence",
+  "version": "0.1.0",
+  "description": "Produce high-signal AI frontier digests from first-party sources, with strict date windows and conversational follow-up.",
+  "author": {
+    "name": "xufeng-code"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI 前沿情报",
+    "shortDescription": "每天从一手来源筛选模型、产品与关键 Builder 的高信号更新。",
+    "longDescription": "系统扫描官方模型、产品更新与关键 Builder 原始表达，用媒体和社区反向查漏，再回溯一手原文，生成可直接读懂且能继续追问的中文图文简报。",
+    "developerName": "xufeng-code",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "用 $ai-frontier-digest 生成今天的 AI 前沿图文简报。"
+    ]
+  }
+}
