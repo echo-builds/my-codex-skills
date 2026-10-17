@@ -23,7 +23,7 @@ jobs:
       contents: write
     defaults:
       run:
-        working-directory: plugins/follow-builders/skills/follow-builders
+        working-directory: plugins/external-skills/follow-builders/skills/follow-builders
 
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +34,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: plugins/follow-builders/skills/follow-builders/scripts
+        working-directory: plugins/external-skills/follow-builders/skills/follow-builders/scripts
 
       - name: Generate feeds
         env:
