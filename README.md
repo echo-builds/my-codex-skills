@@ -1,48 +1,57 @@
 # 我的 Codex Skills
 
-这个仓库用于保存和跨设备安装个人 Codex 插件与 skills。
+这个仓库保存我使用的 Codex 插件与 Skills，并用于跨设备安装。内容按来源分成两类：来自开源社区的 Skills，以及从日常产品工作中沉淀的方法。
 
-## 已包含插件
+## 目录
 
-### 金字塔沟通 `pyramid-communication`
+```text
+plugins/
+├── external-skills/       # 从 GitHub 和开源社区收集的 Skills
+└── work-derived-skills/   # 从日常工作与真实项目复盘中沉淀的 Skills
+```
 
-用于把中文汇报、方案、复盘、述职、周报和演示材料组织成结论先行、上下对应、归类清楚、便于决策的结构。
+## 从 GitHub 和开源社区收集
 
-### PRD 写作风格 `prd-writing-styles`
+这些 Skills 主要用于补充通用能力。我保留原始方法，并在插件层补充了适合个人工作流的说明与安装配置。
 
-- `product-demand-design`：按终态反推、用户分层、上线前验证和 tradeoff 设计或评审需求。
-- `luojing-prd-review`：按罗菁式完整性、边界、策略、数据和上线风险审查 PRD。
-- `zijun-prd-style`：按子隽式判断链重写或评审 PRD 的背景、竞品分析和方案框架。
+| Skill | 什么时候使用 | 它会帮助你得到什么 |
+| --- | --- | --- |
+| `find-skills` | 想知道是否已有可安装的 Skill 能解决当前任务时 | 搜索、核验来源与质量，并协助安装合适的 Skill |
+| `skill-creator` | 创建、修改或评测一个 Skill 时 | Skill 结构、触发说明、测试用例、评测结果与可安装包 |
+| `frontend-design` | 新建或重塑网页、界面和前端视觉时 | 更明确的主题、字体、色彩和版式方向，减少模板化设计 |
+| `product-brainstorming` | 探索产品机会、发散方案或挑战早期假设时 | 问题空间、候选方向、关键假设与收敛建议 |
+| `grilling` | 需要压力测试计划、设计或决策时 | 沿决策树逐轮暴露未决问题、依赖关系和隐含假设 |
+| `grill-me` | 想快速启动 `grilling` 时 | `grilling` 的快捷入口，不是独立方法 |
+| `follow-builders` | 想了解 AI Builder 的近期动态与观点时 | 来自 X、YouTube 和博客的主题摘要与学习要点 |
 
-### Skill 发现 `codex-skill-workflows`
+## 从日常工作中沉淀
 
-- `find-skills`：搜索开放技能生态，核验来源和质量，并协助安装合适的技能。
-- `skill-creator`：Anthropic 官方技能创建工作流，用于创建、改进、评测和打包 Skill。
+这些 Skills 来自真实产品工作、PRD 评审、竞品分析、汇报和人机协作中的反复实践。名称描述的是可迁移的方法；具体经历与人物只作为方法来源，不作为使用前提。
 
-### 前端视觉设计 `frontend-design`
+| Skill | 什么时候使用 | 它会帮助你得到什么 |
+| --- | --- | --- |
+| `pyramid-communication` | 汇报、方案、复盘或演示材料逻辑松散时 | 结论先行、上下对应、归类清楚的沟通结构 |
+| `product-decision-review` | 在需求变成 PRD 或开发计划前，判断是否值得做、为谁做以及做到什么程度时 | 产品终态、用户分层、证据、取舍、推荐方向与上线前验证方案 |
+| `prd-strategic-framing` | PRD 的背景、目标、结果、判断链或整体方案框架不清楚时 | 一条解释“为什么做、为什么这样做、这期做什么”的宏观叙事 |
+| `prd-completeness-review` | 方案方向已定，需要检查 PRD 是否足以进入设计、开发和上线时 | 对范围、页面状态、策略规则、异常、数据、实验和交付细节的完整性审查 |
+| `ambiguous-product-discovery` | 已有能力或方向，但用户任务、产品主线和方案尚不清楚时 | 从需求证据和关键断点逐步形成可决策、可验证的产品方向 |
+| `decision-driven-competitive-analysis` | 竞品研究容易滑向产品清单、功能罗列或截图堆积时 | 围绕待决策问题组织证据、比较机制并明确可迁移边界 |
+| `signal-to-judgment` | 面对杂乱材料、反馈、研究或数据，难以形成核心观点时 | 关键信号、竞争性解释、证伪条件、有证据边界的判断与核心叙事 |
+| `human-ai-collaboration-design` | 与 AI 完成复杂研究、分析、方案或写作，且容易陷入先出成品再返工时 | 人机分工、推进阶段、检查点、决策责任与成品门槛 |
 
-- `frontend-design`：为网页与 UI 建立主题、字体、配色与版式方向，避免模板化默认设计。
+### 产品工作的使用顺序
 
-### 产品探索与头脑风暴 `product-thinking`
+```text
+模糊命题
+  → ambiguous-product-discovery
+  → product-decision-review
+  → decision-driven-competitive-analysis
+  → prd-strategic-framing
+  → prd-completeness-review
+```
 
-- `ambiguous-product-discovery`：用需求证据、关键断点、定向竞品和方案验证推进模糊产品命题。
-- `decision-driven-competitive-analysis`：围绕待决策问题、证据缺口、统一任务链和迁移边界组织竞品分析。
-- `product-brainstorming`：探索问题空间、挑战假设、生成并收敛产品方向。
-
-### 计划压力测试 `grilling`
-
-- `grilling`：沿决策树逐轮追问，暴露计划、设计或决策中的未决问题。
-- `grill-me`：调用 `grilling` 的快捷入口。
-
-### 思考与人机协作 `thinking-workflows`
-
-- `think-deeper`：识别变化、差异、矛盾与断点，建立竞争性解释和证伪条件。
-- `work-with-ai`：设计人机分工、阶段检查点和成品门槛。
-
-### AI Builder 动态摘要 `follow-builders`
-
-- `follow-builders`：读取集中维护的公开 feed，生成 AI 行业动态、人物观点和主题摘要。
+这不是强制流程：根据任务所处阶段，直接调用最接近当前问题的 Skill 即可。
 
 ## 跨设备使用
 
-在 Codex 中添加这个仓库对应的插件市场，再安装需要的插件。安装或升级后，请新建任务以加载最新版技能。
+在 Codex 中添加这个仓库对应的插件市场，再安装需要的插件。安装或升级后，请新建任务以加载最新版 Skill。

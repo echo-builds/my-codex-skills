@@ -1,0 +1,3 @@
+interface:
+  display_name: "PRD 完整性审查"
+  short_description: "按完整性、边界、策略、数据和上线风险审查 PRD"

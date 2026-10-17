@@ -8,7 +8,7 @@
       "name": "pyramid-communication",
       "source": {
         "source": "local",
-        "path": "./plugins/pyramid-communication"
+        "path": "./plugins/work-derived-skills/pyramid-communication"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -20,7 +20,7 @@
       "name": "prd-writing-styles",
       "source": {
         "source": "local",
-        "path": "./plugins/prd-writing-styles"
+        "path": "./plugins/work-derived-skills/prd-writing-styles"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -32,7 +32,7 @@
       "name": "codex-skill-workflows",
       "source": {
         "source": "local",
-        "path": "./plugins/codex-skill-workflows"
+        "path": "./plugins/external-skills/codex-skill-workflows"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -44,7 +44,7 @@
       "name": "thinking-workflows",
       "source": {
         "source": "local",
-        "path": "./plugins/thinking-workflows"
+        "path": "./plugins/work-derived-skills/thinking-workflows"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -56,7 +56,7 @@
       "name": "follow-builders",
       "source": {
         "source": "local",
-        "path": "./plugins/follow-builders"
+        "path": "./plugins/external-skills/follow-builders"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -68,7 +68,7 @@
       "name": "frontend-design",
       "source": {
         "source": "local",
-        "path": "./plugins/frontend-design"
+        "path": "./plugins/external-skills/frontend-design"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -80,7 +80,7 @@
       "name": "product-thinking",
       "source": {
         "source": "local",
-        "path": "./plugins/product-thinking"
+        "path": "./plugins/work-derived-skills/product-thinking"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -92,7 +92,19 @@
       "name": "grilling",
       "source": {
         "source": "local",
-        "path": "./plugins/grilling"
+        "path": "./plugins/external-skills/grilling"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "product-brainstorming",
+      "source": {
+        "source": "local",
+        "path": "./plugins/external-skills/product-brainstorming"
       },
       "policy": {
         "installation": "AVAILABLE",

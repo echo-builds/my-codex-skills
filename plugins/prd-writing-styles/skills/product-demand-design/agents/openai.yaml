@@ -1,4 +1,0 @@
-interface:
-  display_name: "产品需求设计"
-  short_description: "按终态、用户分层、上线前验证和收益 tradeoff 设计/评审需求"
-  default_prompt: "用 $product-demand-design 帮我评审这份产品方案，重点看终态、用户分层、上线前验证和收益 tradeoff。"

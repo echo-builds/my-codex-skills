@@ -1,0 +1,24 @@
+{
+  "name": "product-brainstorming",
+  "version": "0.1.0",
+  "description": "Explore product problem spaces, generate alternatives, challenge assumptions, and converge on promising directions.",
+  "author": {
+    "name": "Xufeng"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "产品头脑风暴",
+    "shortDescription": "探索问题空间、挑战假设并生成产品方向。",
+    "longDescription": "适合产品机会探索和早期方案发散：把 AI 当作思考伙伴，展开问题空间、生成候选方向、压力测试关键假设并逐步收敛。",
+    "developerName": "Xufeng",
+    "category": "Productivity",
+    "capabilities": [
+      "Analysis",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "用 $product-brainstorming 和我一起探索这个产品机会。",
+      "用 $product-brainstorming 挑战这个方案的关键假设。"
+    ]
+  }
+}

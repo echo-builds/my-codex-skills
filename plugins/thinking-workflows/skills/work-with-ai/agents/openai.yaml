@@ -1,4 +1,0 @@
-interface:
-  display_name: "与 AI 共同思考"
-  short_description: "设计人机分工、阶段检查点和产出节奏，避免过早生成成品造成返工"
-  default_prompt: "使用 $work-with-ai 规划这项复杂任务的人机分工、阶段检查点和产出节奏。"
