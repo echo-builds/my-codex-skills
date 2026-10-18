@@ -1,22 +1,26 @@
 {
   "name": "prd-writing-styles",
-  "version": "0.2.0",
-  "description": "Product decision review, strategic PRD framing, and implementation-level PRD completeness review.",
+  "version": "0.3.0",
+  "description": "Product decision review, strategic PRD framing, implementation completeness, and engineering pre-review.",
   "author": {
     "name": "Xufeng"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "产品决策与 PRD 审查",
-    "shortDescription": "从产品决策、宏观叙事到执行细节完整性审查。",
-    "longDescription": "包含三层互补能力：先判断需求是否值得做、为谁做以及如何验证；再组织 PRD 的背景、目标、判断链和方案框架；最后检查范围、状态、策略、异常、数据与上线细节是否完整。",
+    "shortDescription": "从产品决策、PRD 叙事与完整性到研发细评前预审。",
+    "longDescription": "包含四层互补能力：先判断需求是否值得做、为谁做以及如何验证；再组织 PRD 的背景、目标、判断链和方案框架；随后检查范围、状态、策略、异常、数据与上线细节；最后从研发视角确认需求是否已达到可设计、可估时、可开发、可测试的程度。",
     "developerName": "Xufeng",
     "category": "Productivity",
-    "capabilities": ["Analysis", "Write"],
+    "capabilities": [
+      "Analysis",
+      "Write"
+    ],
     "defaultPrompt": [
       "用 $product-decision-review 评审这份产品方案，重点看终态、用户分层、上线前验证和收益 tradeoff。",
       "用 $prd-strategic-framing 重写这份 PRD 的背景、目标、判断链和方案框架。",
-      "用 $prd-completeness-review 审查这份 PRD 是否足够完整。"
+      "用 $prd-completeness-review 审查这份 PRD 是否足够完整。",
+      "用 $engineering-prd-review 在正式研发细评前预审这份 PRD，找出产品需拍板、研发需确认和可直接补回 PRD 的问题。"
     ]
   }
 }
