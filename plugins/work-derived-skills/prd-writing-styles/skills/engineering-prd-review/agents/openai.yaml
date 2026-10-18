@@ -1,0 +1,3 @@
+interface:
+  display_name: "研发视角 PRD 预审"
+  short_description: "细评前找出会阻塞方案、估时、开发和验收的需求缺口"
