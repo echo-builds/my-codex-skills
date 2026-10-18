@@ -35,6 +35,7 @@ plugins/
 | `product-decision-review` | 在需求变成 PRD 或开发计划前，判断是否值得做、为谁做以及做到什么程度时 | 产品终态、用户分层、证据、取舍、推荐方向与上线前验证方案 |
 | `prd-strategic-framing` | PRD 的背景、目标、结果、判断链或整体方案框架不清楚时 | 一条解释“为什么做、为什么这样做、这期做什么”的宏观叙事 |
 | `prd-completeness-review` | 方案方向已定，需要检查 PRD 是否足以进入设计、开发和上线时 | 对范围、页面状态、策略规则、异常、数据、实验和交付细节的完整性审查 |
+| `engineering-prd-review` | PRD 已基本写完、正式研发细评前，需要提前发现实现歧义和工程风险时 | 细评就绪度、研发阻塞项、产品与研发责任边界、范围化简及可直接补回 PRD 的规则 |
 | `ambiguous-product-discovery` | 已有能力或方向，但用户任务、产品主线和方案尚不清楚时 | 从需求证据和关键断点逐步形成可决策、可验证的产品方向 |
 | `decision-driven-competitive-analysis` | 竞品研究容易滑向产品清单、功能罗列或截图堆积时 | 围绕待决策问题组织证据、比较机制并明确可迁移边界 |
 | `signal-to-judgment` | 面对杂乱材料、反馈、研究或数据，难以形成核心观点时 | 关键信号、竞争性解释、证伪条件、有证据边界的判断与核心叙事 |
@@ -49,6 +50,7 @@ plugins/
   → decision-driven-competitive-analysis
   → prd-strategic-framing
   → prd-completeness-review
+  → engineering-prd-review
 ```
 
 这不是强制流程：根据任务所处阶段，直接调用最接近当前问题的 Skill 即可。
