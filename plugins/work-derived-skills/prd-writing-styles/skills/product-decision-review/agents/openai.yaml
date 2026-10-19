@@ -1,4 +1,4 @@
 interface:
-  display_name: "产品决策审视"
-  short_description: "按终态、用户分层、上线前验证和收益 tradeoff 设计/评审需求"
-  default_prompt: "用 $product-decision-review 帮我评审这份产品方案，重点看终态、用户分层、上线前验证和收益 tradeoff。"
+  display_name: "具体需求准入评审"
+  short_description: "在需求进入 PRD、设计或开发前判断是否值得推进"
+  default_prompt: "用 $product-decision-review 判断这个具体需求是否具备进入 PRD 的条件，重点检查用户问题、受益与受损群体、现有证据和最短验证路径。"

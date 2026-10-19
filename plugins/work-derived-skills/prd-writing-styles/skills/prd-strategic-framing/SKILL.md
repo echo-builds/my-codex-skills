@@ -1,13 +1,21 @@
 ---
 name: prd-strategic-framing
-description: Write, rewrite, or review a PRD's background, desired outcome, product judgment, competitor or reference analysis, scope, high-level solution, and validation narrative. Use when detailed requirements may exist but the document does not yet explain clearly why the problem matters, why this solution shape is appropriate, what this phase will and will not do, or how results should be interpreted.
+description: "Write, rewrite, or review the strategic framing of a PRD before detailed requirements: background, desired outcome, evidence, product judgment, competitor or reference analysis, solution choice, phase scope, and validation narrative. Use when a demand has already passed initial product-decision review but the document still does not explain clearly why the problem matters, why this solution shape is appropriate, what this phase will and will not do, or how results should be interpreted. Do not use for deciding whether an unformed demand should proceed or for implementation-readiness review of states, protocols, data, compatibility, and failure handling."
 ---
 
 # PRD Strategic Framing
 
-Use this skill when the user asks to write, revise, summarize, or review a PRD in "子隽风格", especially the sections before detailed requirements: background, product judgment, competitor/reference analysis, scope, high-level solution, launch rhythm, and experiment framing.
+Use this skill when the user asks to write, revise, summarize, or review the sections before detailed requirements: background, product judgment, competitor/reference analysis, scope, high-level solution, launch rhythm, and experiment framing.
 
-Do not treat this as a fixed formatting template. The style is a product-thinking method: turn scattered research, past attempts, user feedback, data, and feature ideas into a clear judgment chain that explains why this problem matters now, why this solution shape fits this product, what this phase deliberately does and does not do, and how the team will know whether it worked.
+Do not treat this as a fixed formatting template. The method comes from repeated product writing and review practice: turn scattered research, past attempts, user feedback, data, and feature ideas into a clear judgment chain that explains why this problem matters now, why this solution shape fits this product, what this phase deliberately does and does not do, and how the team will know whether it worked.
+
+## Boundary With Adjacent Skills
+
+- Use `product-decision-review` first when the demand itself is still unformed or the team has not decided whether it should proceed.
+- Use `prd-strategic-framing` after the demand direction is sufficiently clear but the PRD lacks a coherent why-now, evidence, judgment, choice, scope, and validation narrative.
+- Use `engineering-prd-review` after the PRD is substantially complete and the remaining question is whether states, objects, data, protocols, compatibility, failure handling, cost, and acceptance rules are implementable.
+
+This skill may identify missing detailed rules, but it should not expand into a system-behavior audit. Hand those questions to `engineering-prd-review`.
 
 ## Core Thinking Chain
 
@@ -24,7 +32,7 @@ Prefer this chain when the material allows it:
 
 ## Common PRD Shapes
 
-Choose the lightest shape that fits the task. Zijun-style clarity comes from matching the document shape to the decision, not making every PRD long.
+Choose the lightest shape that fits the task. Clarity comes from matching the document shape to the decision, not making every PRD long.
 
 - Strategy or major revision PRD: `项目背景 -> 产品比较/线上数据 -> 优化方向 -> 阶段计划 -> 本期需求范围 -> 需求详情 -> 数据需求`.
 - Formal launch PRD: `整体背景 -> 整体节奏计划 -> 要解决的问题 -> 需求 list 概览 -> 需求详情 -> 成本/数据/实验`.
@@ -44,8 +52,8 @@ Choose the lightest shape that fits the task. Zijun-style clarity comes from mat
 - Distinguish "本期确定需要支持的能力" from "后续需要支持的能力" when the feature is part of a broader system.
 - State reuse and deviation directly: what follows online behavior, what reuses existing components, what intentionally changes because this product scene is different.
 - When a structural choice exists, include alternatives with pros and cons, then state why the selected plan wins under current constraints.
-- In detailed requirements, be precise about entry, trigger, default state, first-time behavior, returning-user behavior, loading, empty state, error state, feedback, exit, and cross-page continuation.
-- For AI features, describe both product interaction and model/capability strategy: prompt or tool invocation, memory/context, generation strategy, safety strategy, cache, latency, and cost if relevant.
+- Before detailed requirements, name the user journey, capability boundaries, important dependencies, and unresolved rules that the next section must specify. Leave exhaustive state, failure, protocol, compatibility, and acceptance review to `engineering-prd-review`.
+- For AI features, state the product-level capability strategy and the tradeoff being made. Only include prompt, memory, safety, cache, latency, or cost details when they are necessary to explain the high-level solution choice.
 - For experiments, write the tradeoff being tested, not just the metric. Typical tradeoffs: quality vs latency, depth vs completion, entry exposure vs retention, personalization vs controllability, or model quality vs cost.
 - Use appendices for heavy analysis, clustering, prompt cases, and historical data. Keep the main route readable and let the appendix support the judgment.
 - Keep the tone direct, calm, and practical. Favor plain product language over polished slogans.
@@ -70,4 +78,4 @@ For a review, lead with the strongest gaps in the draft's reasoning chain, then 
 
 For a rewrite, preserve the user's actual facts and constraints. Do not invent data, experiment results, competitor claims, internal OKR context, cost numbers, or launch dates. If evidence is missing, write cautious language or mark the gap as something to fill.
 
-For a summary of Zijun's style, emphasize the repeatable thinking pattern rather than copying exact sentences from prior documents.
+When explaining this method, emphasize the repeatable judgment chain and why each step reduces decision ambiguity. Do not imitate a named person's wording, authority, or verbal style.
