@@ -1,5 +1,7 @@
 # Xufeng's Codex Skills
 
+> A practical collection of Codex skills built from real AI product work, plus selected open-source skills used in daily workflows.
+
 这个仓库一方面保存我在真实 AI 产品工作中反复使用、复盘并沉淀下来的 Skills，另一方面收录我日常工作中会使用的开源社区 Skills。它既是我的跨设备工作台，也是一套可安装、可继续迭代的 AI 产品工作方法。
 
 ## 精选 Skills
@@ -85,7 +87,7 @@ plugins/
 
 ### 从 GitHub 和开源社区收集
 
-这些 Skills 用于补充通用能力。安装和对外分发前仍应分别核对原始来源、许可证、运行环境与 Codex 兼容性。
+这些 Skills 用于补充通用能力。仓库保留并标注其原始来源和许可证；详细归属见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
 
 | Skill | 什么时候使用 | 它会帮助你得到什么 |
 | --- | --- | --- |
@@ -97,6 +99,13 @@ plugins/
 | [`follow-builders`](plugins/external-skills/follow-builders/skills/follow-builders/SKILL.md) | 了解 AI Builder 的近期动态与观点 | 来自 X、YouTube 和博客的主题摘要与学习要点 |
 
 > `ambiguous-product-discovery`、`product-brainstorming` 和 `prd-completeness-review` 已迁移至私有仓库 `private-product-skills`，不包含在这个公开目录中。
+
+## 授权与来源
+
+- `plugins/work-derived-skills/` 中由我原创的内容采用 [CC BY 4.0](LICENSE.md)；你可以使用、分享和改编，但需保留署名。
+- `plugins/external-skills/` 中的内容不适用上述授权，分别遵循各自上游项目的许可证。
+- 社区 Skill 的原作者、上游地址、本地授权文件及适配说明见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+- 第三方商标、服务名称和外部内容仍归各自权利人所有。
 
 ## 安装与更新
 

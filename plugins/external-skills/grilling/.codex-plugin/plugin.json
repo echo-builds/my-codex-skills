@@ -1,16 +1,16 @@
 {
   "name": "grilling",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Relentless structured questioning for stress-testing plans and decisions.",
   "author": {
-    "name": "Xufeng"
+    "name": "Matt Pocock; packaged by Xufeng"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "计划压力测试",
     "shortDescription": "通过结构化追问打磨计划、设计和决策。",
     "longDescription": "包含 grilling 核心追问流程与 grill-me 快捷入口，沿决策树逐轮暴露未决问题和隐含假设。",
-    "developerName": "Xufeng",
+    "developerName": "Matt Pocock / Xufeng",
     "category": "Productivity",
     "capabilities": [
       "Analysis",

@@ -1,16 +1,16 @@
 {
   "name": "codex-skill-workflows",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Personal workflows for discovering, creating, improving, and evaluating agent skills.",
   "author": {
-    "name": "Xufeng"
+    "name": "Vercel & Anthropic; packaged by Xufeng"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Codex Skill 发现与创建",
     "shortDescription": "搜索、核验、创建并评测 Agent Skill。",
     "longDescription": "包含 find-skills 与 Anthropic 官方 skill-creator：搜索并核验开放技能，也可创建、改进、评测、优化触发描述并打包技能。",
-    "developerName": "Xufeng",
+    "developerName": "Vercel / Anthropic / Xufeng",
     "category": "Productivity",
     "capabilities": [
       "Analysis",

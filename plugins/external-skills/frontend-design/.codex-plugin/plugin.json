@@ -1,16 +1,16 @@
 {
   "name": "frontend-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Distinctive, intentional visual design guidance for frontend interfaces.",
   "author": {
-    "name": "Xufeng"
+    "name": "Anthropic; packaged by Xufeng"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "前端视觉设计",
     "shortDescription": "为网页与 UI 建立有辨识度的视觉方向。",
     "longDescription": "帮助新建或重塑网页与 UI：从主题、字体、色彩和版式出发，避免模板化默认设计，并保留原始 Apache 2.0 许可证。",
-    "developerName": "Xufeng",
+    "developerName": "Anthropic / Xufeng",
     "category": "Productivity",
     "capabilities": [
       "Analysis",
