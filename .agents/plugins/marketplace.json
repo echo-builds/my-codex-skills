@@ -101,18 +101,6 @@
       "category": "Productivity"
     },
     {
-      "name": "product-brainstorming",
-      "source": {
-        "source": "local",
-        "path": "./plugins/external-skills/product-brainstorming"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
       "name": "ai-intelligence",
       "source": {
         "source": "local",

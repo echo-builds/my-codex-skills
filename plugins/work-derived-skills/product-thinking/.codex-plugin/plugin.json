@@ -1,15 +1,15 @@
 {
   "name": "product-thinking",
-  "version": "0.4.0",
-  "description": "Work-derived product discovery, executive product judgment, and decision-driven competitive analysis workflows.",
+  "version": "0.5.0",
+  "description": "Work-derived executive product judgment and decision-driven competitive analysis workflows.",
   "author": {
     "name": "Xufeng"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "产品探索、老板视角判断与决策型竞品分析",
-    "shortDescription": "从模糊命题、老板视角判断和竞品证据走向可验证的产品决策。",
-    "longDescription": "包含模糊产品发现、老板/业务负责人视角的产品判断与决策型竞品分析：识别主要矛盾、价值传导断点、因果证据和机会成本，再收敛到继续、调整、验证或停止。",
+    "displayName": "老板视角判断与决策型竞品分析",
+    "shortDescription": "从老板视角和竞品证据走向可验证的产品决策。",
+    "longDescription": "包含老板/业务负责人视角的产品判断与决策型竞品分析：识别主要矛盾、价值传导断点、因果证据、迁移边界和机会成本，再收敛到继续、调整、验证或停止。",
     "developerName": "Xufeng",
     "category": "Productivity",
     "capabilities": [
@@ -17,7 +17,6 @@
       "Write"
     ],
     "defaultPrompt": [
-      "用 $ambiguous-product-discovery 推进这个模糊产品命题。",
       "用 $executive-product-judgment 从老板/业务负责人视角判断这个需求、方案或上线结果。",
       "用 $decision-driven-competitive-analysis 围绕当前产品决策组织竞品分析。"
     ]
