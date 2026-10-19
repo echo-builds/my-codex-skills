@@ -213,3 +213,7 @@ description: 用老板/业务负责人视角审视产品需求、方案、方向
 - 不要只说“数据不足”，而应说明缺少什么证据及其决策意义；
 - 不要默认继续投入，始终保留停止选项。
 
+## References
+
+当需要理解本 Skill 的判断模式来源、分析复杂矛盾，或扩展本 Skill 时，读取 `references/pattern-origins.md`。
+
