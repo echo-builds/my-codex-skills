@@ -1,6 +1,6 @@
 {
   "name": "prd-writing-styles",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Product decision review, strategic PRD framing, and engineering pre-review.",
   "author": {
     "name": "Xufeng"
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "产品决策、PRD 战略框架与研发预审",
     "shortDescription": "从产品决策和 PRD 叙事推进到研发细评前预审。",
-    "longDescription": "包含三层互补能力：先判断需求是否值得做、为谁做以及如何验证；再组织 PRD 的背景、目标、判断链和方案框架；最后从研发视角确认需求是否已达到可设计、可估时、可开发、可测试的程度。",
+    "longDescription": "包含三层边界清晰的能力：先判断一个具体需求是否具备进入方案阶段的条件；再组织 PRD 的背景、证据、判断链、方案选择和阶段范围；最后从研发视角确认需求是否已达到可设计、可估时、可开发、可测试的程度。",
     "developerName": "Xufeng",
     "category": "Productivity",
     "capabilities": [
@@ -17,7 +17,7 @@
       "Write"
     ],
     "defaultPrompt": [
-      "用 $product-decision-review 评审这份产品方案，重点看终态、用户分层、上线前验证和收益 tradeoff。",
+      "用 $product-decision-review 判断这个具体需求是否具备进入 PRD 的条件，重点看用户问题、受益与受损群体、现有证据和最短验证路径。",
       "用 $prd-strategic-framing 重写这份 PRD 的背景、目标、判断链和方案框架。",
       "用 $engineering-prd-review 在正式研发细评前预审这份 PRD，找出产品需拍板、研发需确认和可直接补回 PRD 的问题。"
     ]

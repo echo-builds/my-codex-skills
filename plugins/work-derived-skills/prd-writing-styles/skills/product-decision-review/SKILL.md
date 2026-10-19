@@ -1,13 +1,20 @@
 ---
 name: product-decision-review
-description: Use when helping the user think through any product demand, opportunity, proposal, or decision before action, especially when they need end-state reasoning, user segmentation, evidence, tradeoff analysis, and pre-launch judgment.
+description: Review one concrete product demand, opportunity, or proposal before it enters PRD, design, or development. Use when the user needs a pre-commitment decision on whether the problem is real, who benefits or may be harmed, what current evidence can validate it, which solution direction should win, and what must be true before proceeding. Do not use for broad strategy, portfolio prioritization, post-launch analysis, or executive-level product diagnosis; use executive-product-judgment for those.
 ---
 
 # Product Decision Review
 
-Use this skill as a thinking partner before a product decision becomes a plan, PRD, UI change, experiment, model strategy, or resource tradeoff. The goal is not to force every question into a PRD format. The goal is to help the user form a sharper judgment: what is true, what is assumed, what can be verified now, what is worth doing, and what path avoids unnecessary detours.
+Use this skill as a decision gate before one concrete demand becomes a PRD, design task, experiment, or development plan. The goal is not to force every question into a PRD format. The goal is to decide whether this demand should proceed, what evidence is still missing, and what the shortest responsible next step is.
 
 This skill is modeled on a rigorous product review style, not just a checklist. The style matters as much as the concepts: start with the user's concrete business problem, then rise to product positioning, evidence, tradeoff, and path. Do not begin by inventing broad concepts, technical data models, or taxonomy labels unless they directly clarify the decision in front of the user.
+
+## Boundary With Adjacent Skills
+
+- Use `product-decision-review` when the object is one concrete demand and the decision is whether it is ready to enter solution work.
+- Use `executive-product-judgment` when the user needs to identify the main business constraint across demands, assess product direction or portfolio priority, or interpret post-launch and experiment results.
+- Use `prd-strategic-framing` after the demand has passed the decision gate and the PRD needs a clear judgment and scope narrative.
+- Use `engineering-prd-review` after the PRD is substantially complete and needs implementation-readiness review.
 
 ## Core Principle
 
@@ -101,19 +108,15 @@ In thinking mode, do not over-format. Prefer a concise diagnosis, a small set of
 
 ## Output Template
 
-Use this structure when a written artifact is useful. For quick thinking, answer only the relevant parts.
+Use the lightest structure that supports a decision. Do not expand every review into a long memo.
 
-1. One-sentence judgment
-2. Product end-state
-3. Current problem
-4. User segments and affected traffic
-5. Evidence and proxy data
-6. Recommended solution
-7. Rejected alternatives
-8. Transition plan
-9. Tradeoff ledger
-10. Validation and launch plan
-11. Risks, badcases, and fallback
+1. **Decision**: proceed, adjust, validate first, or stop.
+2. **Problem and users**: the concrete damaged experience, primary beneficiary, and counter-user.
+3. **Evidence**: what is known, what is assumed, and which current proxy can reduce uncertainty.
+4. **Recommended direction**: the main proposal, the end-state it supports, and why credible alternatives lose.
+5. **Next gate**: the smallest validation or clarification required before PRD, design, or development.
+
+Add detailed tradeoffs, transition design, launch criteria, badcases, or fallback only when they materially affect the decision.
 
 ## Meeting Response Pattern
 
