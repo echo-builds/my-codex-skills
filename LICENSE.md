@@ -4,7 +4,7 @@ This repository contains original work and redistributed or adapted third-party 
 
 ## Work-derived skills
 
-Unless a file states otherwise, original content under `plugins/work-derived-skills/` is © 2026 Xufeng and licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+Unless a file states otherwise, original content under `plugins/work-derived-skills/` is © 2026 Echo and licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 You may share and adapt that material for any purpose, including commercially, provided that you give appropriate credit, link to the license, and indicate whether changes were made. See the [official legal code](https://creativecommons.org/licenses/by/4.0/legalcode) for the complete terms.
 

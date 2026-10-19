@@ -1,4 +1,4 @@
-# Xufeng's Codex Skills
+# Echo's Codex Skills
 
 > A practical collection of Codex skills built from real AI product work, plus selected open-source skills used in daily workflows.
 
