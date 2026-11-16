@@ -1,22 +1,53 @@
 # Echo's Codex Skills
 
-> A practical collection of Codex skills built from real AI product work, plus selected open-source skills used in daily workflows.
+> 一个 AI 产品经理从真实工作中沉淀的 Skills。  
+> Skills and workflows distilled from real-world AI product management.
 
-这个仓库一方面保存我在真实 AI 产品工作中反复使用、复盘并沉淀下来的 Skills，另一方面收录我日常工作中会使用的开源社区 Skills。它既是我的跨设备工作台，也是一套可安装、可继续迭代的 AI 产品工作方法。
+## About · 为什么有这个仓库
 
-## 精选 Skills
+我是一名 AI 产品经理。这个仓库记录我在日常工作中逐渐形成、反复使用，并尝试通过 AI 复用的一些工作方法。
 
-以下 5 个 Skill 最能代表我目前的工作沉淀。它们不是通用 Prompt 模板，而是从真实的信息追踪、产品判断、竞品分析、PRD 写作和研发协作中提炼出的可复用工作流。
+产品工作中，有些问题会反复出现：
 
-| Skill | 它解决什么问题 | 核心产出 |
-| --- | --- | --- |
-| [`ai-frontier-digest`](plugins/work-derived-skills/ai-intelligence/skills/ai-frontier-digest/SKILL.md) | AI 信息很多，但二手转述、重复新闻和营销噪音让人难以形成判断 | 基于一手来源、按北京时间自然日核验的高信噪比中文图文简报 |
-| [`decision-driven-competitive-analysis`](plugins/work-derived-skills/product-thinking/skills/decision-driven-competitive-analysis/SKILL.md) | 竞品研究容易变成产品清单、功能罗列和截图堆积 | 围绕待决策问题组织的竞品证据、机制比较、迁移边界与验证建议 |
-| [`engineering-prd-review`](plugins/work-derived-skills/prd-writing-styles/skills/engineering-prd-review/SKILL.md) | PRD 在研发细评现场才暴露状态、边界、数据和责任问题 | 细评就绪度、研发阻塞项、责任归属和可直接补回 PRD 的规则 |
-| [`prd-strategic-framing`](plugins/work-derived-skills/prd-writing-styles/skills/prd-strategic-framing/SKILL.md) | PRD 有很多需求细节，却没有讲清为什么做、为什么这样做和这期做什么 | 从背景、证据和产品判断到方案选择、阶段范围与验证逻辑的叙事链 |
-| [`executive-product-judgment`](plugins/work-derived-skills/product-thinking/skills/executive-product-judgment/SKILL.md) | 团队容易停留在局部执行和正向指标，忽略最终结果、产品主线与机会成本 | 主要矛盾、价值传导断点、因果审计及继续、调整、验证或停止建议 |
+- **竞品分析**收集了很多功能和截图，却没有回答真正待决策的问题。
+- **PRD 写作**描述了完整的功能和交互，却没有讲清为什么做、为什么选择这个方案。
+- **研发评审**到了细评才发现状态、边界条件和责任归属没有定义清楚。
+- **业务复盘**容易停留在指标变化和工作完成情况，却没有解释原因与下一步判断。
 
-## AI 产品经理的日常工作流
+这些问题不是简单让 AI「帮我写份文档」就能解决的。我尝试把工作中积累的处理方法整理为 Skills，让 AI 在面对相似任务时，可以复用一套清晰的步骤、判断标准与检查要求，而不是每次从头解释。
+
+**我希望沉淀的不只是 Prompt，而是可复用、可检查、可持续改进的工作方法。**
+
+Skills 帮助我减少重复性的整理、分析与检查工作，但不会代替产品经理对证据、取舍和最终结果负责。
+
+## Featured Skills · 工作沉淀精选
+
+| Skill | 实际工作中解决什么问题 |
+| --- | --- |
+| [`prd-strategic-framing`](plugins/work-derived-skills/prd-writing-styles/skills/prd-strategic-framing/SKILL.md) | PRD 写了很多需求细节，却没有讲清背景、证据、方案取舍和阶段目标 |
+| [`decision-driven-competitive-analysis`](plugins/work-derived-skills/product-thinking/skills/decision-driven-competitive-analysis/SKILL.md) | 竞品分析变成功能清单，无法支持真实的产品决策 |
+| [`product-decision-review`](plugins/work-derived-skills/prd-writing-styles/skills/product-decision-review/SKILL.md) | 需求尚未想清楚，就过早进入方案设计 |
+| [`engineering-prd-review`](plugins/work-derived-skills/prd-writing-styles/skills/engineering-prd-review/SKILL.md) | 研发细评时才暴露状态、边界和规则问题 |
+| [`executive-product-judgment`](plugins/work-derived-skills/product-thinking/skills/executive-product-judgment/SKILL.md) | 过度关注局部执行或正向指标，忽略业务结果和机会成本 |
+| [`ai-frontier-digest`](plugins/work-derived-skills/ai-intelligence/skills/ai-frontier-digest/SKILL.md) | AI 动态信息多、噪音大，难以高效核验真正重要的一手信息 |
+
+## Example · 一个 Skill 如何发挥作用
+
+以 [`prd-strategic-framing`](plugins/work-derived-skills/prd-writing-styles/skills/prd-strategic-framing/SKILL.md) 为例：
+
+**典型输入**：一份已经包含功能清单和交互细节，但缺少清晰产品判断的 PRD 草稿。
+
+**Skill 的工作方式**：围绕「为什么现在做 → 核心问题与证据 → 产品判断 → 为什么选择这个方案 → 本期做与不做什么 → 如何验证结果」，检查论证是否连贯，并指出证据缺口与尚未明确的取舍。
+
+**期望输出**：一条可供团队讨论的判断链，而不是仅仅润色文字或套用固定 PRD 模板。
+
+> 这是 Skill 的用途示例，不是经过量化验证的提效结果。涉及具体业务的材料需要先脱敏，再作为公开案例。
+
+## Workflow & All Skills · 工作流与全部 Skills
+
+这些 Skill 可按需组合，而不是每个项目都必须依次执行。我通常从明确问题开始，经过证据收集、产品判断、方案设计、研发协作与结果复盘，再把新经验继续沉淀下来。
+
+### 日常工作流
 
 这部分按真实工作任务组织，不区分 Skill 是自己沉淀还是来自开源社区。它是一张按需导航图，不是每个项目都必须从头走到尾的固定流程。
 
@@ -62,7 +93,7 @@
 - `skill-creator`：创建、修改、评测和迭代 Skill。
 - `find-skills`：先检查社区是否已有合适能力，再决定安装、适配或自己创建。
 
-## 全部 Skills
+### 全部 Skills
 
 仓库文件按来源分成两类：
 
@@ -102,19 +133,19 @@ plugins/
 
 > `ambiguous-product-discovery`、`product-brainstorming` 和 `prd-completeness-review` 已迁移至私有仓库 `private-product-skills`，不包含在这个公开目录中。
 
-## 授权与来源
+## Installation & Credits · 安装和来源
 
 - `plugins/work-derived-skills/` 中由我原创的内容采用 [CC BY 4.0](LICENSE.md)；你可以使用、分享和改编，但需保留署名。
 - `plugins/external-skills/` 中的内容不适用上述授权，分别遵循各自上游项目的许可证。
 - 社区 Skill 的原作者、上游地址、本地授权文件及适配说明见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
 - 第三方商标、服务名称和外部内容仍归各自权利人所有。
 
-## 安装与更新
+### 安装与更新
 
 将这个仓库添加为 Codex 插件市场：
 
 ```bash
-codex plugin marketplace add xufeng-code/my-codex-skills
+codex plugin marketplace add echo-builds/my-codex-skills
 ```
 
 然后在 Codex 或 ChatGPT 桌面端的 Plugins Directory 中选择该市场，并按需安装插件。安装或升级后，新建任务以加载最新版 Skill。
