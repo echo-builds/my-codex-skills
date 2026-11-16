@@ -31,18 +31,6 @@ Skills 帮助我减少重复性的整理、分析与检查工作，但不会代�
 | [`executive-product-judgment`](plugins/work-derived-skills/product-thinking/skills/executive-product-judgment/SKILL.md) | 过度关注局部执行或正向指标，忽略业务结果和机会成本 |
 | [`ai-frontier-digest`](plugins/work-derived-skills/ai-intelligence/skills/ai-frontier-digest/SKILL.md) | AI 动态信息多、噪音大，难以高效核验真正重要的一手信息 |
 
-## Example · 一个 Skill 如何发挥作用
-
-以 [`prd-strategic-framing`](plugins/work-derived-skills/prd-writing-styles/skills/prd-strategic-framing/SKILL.md) 为例：
-
-**典型输入**：一份已经包含功能清单和交互细节，但缺少清晰产品判断的 PRD 草稿。
-
-**Skill 的工作方式**：围绕「为什么现在做 → 核心问题与证据 → 产品判断 → 为什么选择这个方案 → 本期做与不做什么 → 如何验证结果」，检查论证是否连贯，并指出证据缺口与尚未明确的取舍。
-
-**期望输出**：一条可供团队讨论的判断链，而不是仅仅润色文字或套用固定 PRD 模板。
-
-> 这是 Skill 的用途示例，不是经过量化验证的提效结果。涉及具体业务的材料需要先脱敏，再作为公开案例。
-
 ## Workflow & All Skills · 工作流与全部 Skills
 
 这些 Skill 可按需组合，而不是每个项目都必须依次执行。我通常从明确问题开始，经过证据收集、产品判断、方案设计、研发协作与结果复盘，再把新经验继续沉淀下来。
