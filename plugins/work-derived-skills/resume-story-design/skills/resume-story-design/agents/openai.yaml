@@ -1,0 +1,7 @@
+interface:
+  display_name: "简历叙事设计"
+  short_description: "从经历叙事、信息层级到可投递 PDF 的完整简历设计与验收"
+  brand_color: "#2454D3"
+  default_prompt: "使用 $resume-story-design 诊断并重构我的简历，最终交付可直接投递的 PDF。"
+policy:
+  allow_implicit_invocation: true

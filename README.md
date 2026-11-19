@@ -30,6 +30,7 @@ Skills 帮助我减少重复性的整理、分析与检查工作，但不会代�
 | [`engineering-prd-review`](plugins/work-derived-skills/prd-writing-styles/skills/engineering-prd-review/SKILL.md) | 研发细评时才暴露状态、边界和规则问题 |
 | [`executive-product-judgment`](plugins/work-derived-skills/product-thinking/skills/executive-product-judgment/SKILL.md) | 过度关注局部执行或正向指标，忽略业务结果和机会成本 |
 | [`ai-frontier-digest`](plugins/work-derived-skills/ai-intelligence/skills/ai-frontier-digest/SKILL.md) | AI 动态信息多、噪音大，难以高效核验真正重要的一手信息 |
+| [`resume-story-design`](plugins/work-derived-skills/resume-story-design/skills/resume-story-design/SKILL.md) | 简历内容真实但层级混乱，项目关系和个人判断无法被面试官快速读懂 |
 
 ## Workflow & All Skills · 工作流与全部 Skills
 
@@ -76,7 +77,11 @@ Skills 帮助我减少重复性的整理、分析与检查工作，但不会代�
 - `pyramid-communication`：把方案、复盘、报告和演示材料组织成结论先行、层级清楚的表达。
 - `reader-first-business-writing`：按读者角色和业务逻辑重构周报、方案、经营复盘与决策材料，补齐结果归因、信息取舍和行动闭环。
 
-### 9. 把新的经验继续沉淀成能力
+### 9. 设计并交付可投递简历
+
+- `resume-story-design`：把真实经历整理成清晰的求职叙事，完成信息层级、版式设计、A4 PDF 与链接验收。
+
+### 10. 把新的经验继续沉淀成能力
 
 - `skill-creator`：创建、修改、评测和迭代 Skill。
 - `find-skills`：先检查社区是否已有合适能力，再决定安装、适配或自己创建。
@@ -105,6 +110,7 @@ plugins/
 | [`human-ai-collaboration-design`](plugins/work-derived-skills/thinking-workflows/skills/human-ai-collaboration-design/SKILL.md) | 与 AI 完成复杂研究、分析、方案或写作 | 人机分工、推进阶段、检查点、决策责任与成品门槛 |
 | [`pyramid-communication`](plugins/work-derived-skills/pyramid-communication/skills/pyramid-communication/SKILL.md) | 汇报、方案、复盘或演示材料逻辑松散 | 结论先行、上下对应、归类清楚的沟通结构 |
 | [`reader-first-business-writing`](plugins/work-derived-skills/pyramid-communication/skills/reader-first-business-writing/SKILL.md) | 周报、方案或经营复盘堆满工作信息，却缺少读者视角、业务主线和结果归因 | 面向决策者、协作者与同步者的业务结构、因果拆解、信息取舍和行动闭环 |
+| [`resume-story-design`](plugins/work-derived-skills/resume-story-design/skills/resume-story-design/SKILL.md) | 已有真实经历与项目材料，但定位、层级、项目关系或版面表达不清楚 | 面向目标岗位的经历叙事、视觉层级、可编辑源文件和经过检查的投递版 PDF |
 
 ### 从 GitHub 和开源社区收集
 

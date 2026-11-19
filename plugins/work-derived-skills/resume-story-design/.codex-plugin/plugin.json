@@ -1,0 +1,20 @@
+{
+  "name": "resume-story-design",
+  "version": "0.1.0",
+  "description": "Turn real experience into a clear, visually intentional, submission-ready resume with verified PDF delivery.",
+  "author": {
+    "name": "xufeng-code"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "简历叙事设计",
+    "shortDescription": "从经历叙事、信息层级到可投递 PDF 的完整简历设计与验收。",
+    "longDescription": "先确认求职定位、事实与项目关系，再完成信息层级、版式重构和 A4 PDF 验收，避免局部美化破坏整体叙事。",
+    "developerName": "xufeng-code",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "用 $resume-story-design 诊断并重构我的简历，最终交付可直接投递的 PDF。"
+    ]
+  }
+}
